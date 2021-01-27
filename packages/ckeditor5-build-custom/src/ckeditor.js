@@ -64,4 +64,49 @@ Editor.builtinPlugins = [
 	TodoList
 ];
 
+// Editor configuration.
+Editor.defaultConfig = {
+	toolbar: {
+		items: [
+			'bold',
+			'italic',
+			'strikethrough',
+			'link'
+		]
+	},
+	blockToolbar: [
+		'heading',
+		'numberedList',
+		'bulletedList',
+		'todoList',
+		'imageUpload',
+		'blockQuote',
+		'mediaEmbed',
+		'insertTable',
+		'fontColor',
+		'indent',
+		'outdent',
+		'undo',
+		'redo'
+	],
+	image: {
+		toolbar: [
+			'imageTextAlternative',
+			'imageStyle:full',
+			'imageStyle:side'
+		]
+	},
+	table: {
+		contentToolbar: [
+			'tableColumn',
+			'tableRow',
+			'mergeTableCells'
+		]
+	},
+	licenseKey: '',
+	// This value must be kept in sync with the language defined in webpack.config.js.
+	language: 'en'
+};
+
+
 export default Editor;
